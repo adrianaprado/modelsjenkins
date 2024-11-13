@@ -15,4 +15,25 @@ class PersonaTest {
 		assertTrue(esMayor);
 	}
 
+	@Test
+	void mayorEdadTest2() {
+		Persona p = new Persona("Ana", 18);
+		boolean esMayor = p.esMayorEdad();
+		assertTrue(esMayor);
+	}
+	
+	@Test
+	void mayorEdadTest3() {
+		Persona p = new Persona("Jorge", 30);
+		boolean esMayor = p.esMayorEdad();
+		assertTrue(esMayor);
+	}
+	
+	@Test
+	void mayorEdadTest4() {
+		Persona p = new Persona("Mike", 10);
+		boolean esMayor = p.esMayorEdad();
+		assertTrue(esMayor);
+	}
+	
 }
